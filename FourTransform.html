@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Transforms</title>
+    <style>
+        div
+        {
+            width: 200px;
+            height:250px;
+            margin: 100px auto;
+            box-shadow: 0 0 10px black;
+            background-color: black;
+            position: relative;
+        }
+        div:hover
+        {
+            cursor: pointer;
+        }
+        div>img
+        {
+            width: inherit;
+            height: inherit;
+            position: absolute;
+        }
+        div:hover>#a
+        {
+            transform: translateY(250px);
+        }
+        div:hover>#b
+        {
+            transform: translateX(200px);
+        }
+        div>#a
+        {
+            transition: all 1s linear 0s;
+        }
+        div>#b
+        {
+            transition: all 1s linear 0s;
+        }
+        div:hover>#c
+        {
+            transform: translateX(-200px);
+        }
+        div>#c
+        {
+            transition: all 1s linear 0s;
+        }
+        div:hover>#d
+        {
+            transform: translateY(-250px);
+        }
+        div>#d
+        {
+            transition: all 1s linear 0s;
+        }
+       h1{
+        position: absolute;
+        color: aqua;
+       }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>MAGIC</h1>
+        <img id="b" src="src/A.jpg" alt="">
+        <img id="a"src="src/B.jpg" alt="">
+        <img id="c" src="src/C.jpg" alt="">
+        <img id="d"src="src/D.jpg" alt="">
+    </div>
+</body>
+</html>
